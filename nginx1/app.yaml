@@ -21,7 +21,7 @@ spec:
 #      selfHeal: false
 #      allowEmpty: false
     syncOptions:
-      - Validate=true
+#      - Validate=true
       - CreateNamespace=true
     retry:
       limit: 5
