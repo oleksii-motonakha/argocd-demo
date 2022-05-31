@@ -16,10 +16,10 @@ spec:
     server: "https://kubernetes.default.svc"
     namespace: app1
   syncPolicy:
-    automated: {}
-#      prune: false
-#      selfHeal: false
-#      allowEmpty: false
+    automated:
+      prune: false
+      selfHeal: false
+      allowEmpty: false
     syncOptions:
 #      - Validate=true
       - CreateNamespace=true
