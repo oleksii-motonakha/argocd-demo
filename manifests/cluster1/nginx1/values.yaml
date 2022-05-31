@@ -1,1 +1,3 @@
 releaseName: nginx1
+image:
+  tag: "1.15.0"
