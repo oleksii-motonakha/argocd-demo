@@ -9556,8 +9556,8 @@ metadata:
     app.kubernetes.io/name: argocd-cm
     app.kubernetes.io/part-of: argocd
   name: argocd-cm
-#data:
-#  kustomize.buildOptions: --enable-helm
+data:
+  kustomize.buildOptions: --enable-helm
 #  configManagementPlugins: |
 #    - name: kustomize-build-with-helm
 #      generate:
