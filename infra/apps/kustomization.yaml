@@ -20,7 +20,7 @@ helmCharts:
   releaseName: grafana
   namespace: infra
   valuesFile: values.yaml
-- name: grafana2
+- name: grafana
   #repo: https://charts.jetstack.io
   #version: v1.5.3
   releaseName: grafana2
