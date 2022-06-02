@@ -1,0 +1,22 @@
+#repositories:
+## To use official "stable" charts a.k.a https://github.com/helm/charts/tree/master/stable
+#- name: stable
+#  url: https://charts.helm.sh/stable
+## To use official "incubator" charts a.k.a https://github.com/helm/charts/tree/master/incubator
+#- name: incubator
+#  url: https://charts.helm.sh/incubator
+#- name: bitnami
+#  url: https://charts.bitnami.com/bitnami
+
+#helmDefaults:
+#  createNamespace: true
+
+releases:
+  - name: argocd                            # name of this release
+    namespace: argocd                       # target namespace
+    chart: charts/argocd
+    createNamespace: true
+    # the chart being installed to create this release, referenced by relative path to local helmfile
+    #    values:
+    #    - "../../my-values/grafana/values.yaml"             # Values file (relative path to manifest)
+    #    wait: true

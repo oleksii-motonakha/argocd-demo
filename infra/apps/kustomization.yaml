@@ -1,0 +1,22 @@
+helmGlobals:
+  chartHome: ../../charts
+
+#helmCharts:
+#- name: argocd
+#  releaseName: argocd
+#  namespace: argocd
+
+#helmCharts:
+#- name: cert-manager
+#  #repo: https://charts.jetstack.io
+#  #version: v1.5.3
+#  releaseName: my-cert-manager
+#  namespace: cert-manager
+
+helmCharts:
+- name: grafana
+  #repo: https://charts.jetstack.io
+  #version: v1.5.3
+  releaseName: grafana
+  namespace: infra
+  valuesFile: values.yaml
