@@ -1194,3 +1194,5 @@ diagnosticMode:
   ##
   args:
     - infinity
+
+architecture: standalone
