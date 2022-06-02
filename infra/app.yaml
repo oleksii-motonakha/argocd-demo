@@ -17,7 +17,7 @@ spec:
     namespace: infra
   syncPolicy:
     automated:
-      prune: false
+      prune: true
       selfHeal: false
       allowEmpty: false
     syncOptions:

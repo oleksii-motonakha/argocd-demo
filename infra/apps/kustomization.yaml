@@ -20,9 +20,9 @@ helmCharts:
   releaseName: grafana
   namespace: infra
   valuesFile: values.yaml
-- name: redis
-  #repo: https://charts.jetstack.io
-  #version: v1.5.3
-  releaseName: redis
-  namespace: infra
-  valuesFile: values.yaml
+#- name: redis
+#  #repo: https://charts.jetstack.io
+#  #version: v1.5.3
+#  releaseName: redis
+#  namespace: infra
+#  valuesFile: values.yaml
