@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    path: ../charts/demo
+    path: ./charts/demo
     repoURL: https://github.com/oleksii-motonakha/argocd-demo
     targetRevision: master
     helm:
