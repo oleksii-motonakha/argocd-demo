@@ -1,0 +1,31 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: demo
+  namespace: argocd
+spec:
+  project: default
+  source:
+    path: ./charts/demo
+    repoURL: https://github.com/oleksii-motonakha/argocd-demo
+    targetRevision: master
+    helm:
+      valueFiles:
+        - ../../manifests/cluster1/demo/values.yaml
+  destination:
+    server: "https://kubernetes.default.svc"
+    namespace: demo
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: false
+      allowEmpty: false
+    syncOptions:
+#      - Validate=true
+      - CreateNamespace=true
+    retry:
+      limit: 5
+      backoff:
+        duration: 5s
+        factor: 2
+        maxDuration: 3m
